@@ -1,24 +1,25 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Login } from "./Login";
+
 
 // IMPORT DEFAULT
-import Home from "./home";
-import Footer from "./Footer";
+import Navbar from "./components/Navbar/Navbar";
+import ItemList from "./components/ItemList/ItemList";
+import CounterContainer from "./components/Counter/CounterContainer";
 
 
-// IMPORT NOMBRE
-import { Navbar } from "./Navbar";
 
 
 function App() {
+
+  let saludo = "Hola juancito como estas"
+  let edad = 26
+
   return (
     <div className="App">
-      <Login />
-       <h1>Esto es propio de login</h1>
-       <Navbar />
-       <Home />
-       <Footer />
+      <Navbar color="red" />
+      <ItemList saludo={saludo} edad={edad} />
+      <CounterContainer />
     </div>
   );
 }
