@@ -4,7 +4,6 @@ import styles from "./ItemDescrip.module.css"
 
 
 const ItemDescrip = ({ saludo, item1 }) => {
-  // let {edad, saludo} = props
 
   return (
     <div>

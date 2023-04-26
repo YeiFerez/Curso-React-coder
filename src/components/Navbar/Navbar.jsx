@@ -4,12 +4,11 @@
 import CartWidget from "../CartWidget/CartWidget"
 import styles from "./Navbar.module.css"
 import imgLogo from "../../assets/images/logoUT.jpg"
-import { Link, NavLink, Outlet, useNavigate } from "react-router-dom"
+import { Link, NavLink, Outlet } from "react-router-dom"
 import {Button} from "@mui/material";
 
 const Navbar = ( {color} )=>{
 
-    const navigate = useNavigate();
 
     return <div>
         <div className={styles.containerNavbar} >
