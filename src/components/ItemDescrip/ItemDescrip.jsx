@@ -7,7 +7,7 @@ const ItemDescrip = ({ saludo, item1 }) => {
 
   return (
     <div>
-      <div>
+      <div className={styles.container}>
       <h2 className={styles.centro}>{saludo}</h2>
       <div style={{ display: "flex" }}>
         <div className={styles.mover} style={{flexBasis:"60%"}}>

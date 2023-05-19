@@ -5,14 +5,15 @@ import styles from "./ItemList.module.css";
 const ItemList = ({ saludo, items }) => {
 
   return (
-    <div
+    <div className={styles.container}
       style={{
         display: "flex",
         justifyContent: "space-evenly",
         flexWrap: "wrap",
         minHeight: "90vh",
         padding: "40px",
-        gap: "25px"
+        gap: "25px",
+        
       }}
     >
       {items.map((item) => {

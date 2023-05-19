@@ -12,6 +12,7 @@ import CartContextProvider from "./context/CartContext";
 import { FormCheckoutContainer } from "./components/FormCheckout/FormCheckoutContainer";
 import CartContainer from "./components/Cart/CartContainer";
 import Form from "./components/Form/Form";
+import ErrorNoFund from "./components/Error/ErrorNoFund";
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
           <Route path="/cart" element={<CartContainer />}/>
           <Route path="/form" element={<Form />}/>
           <Route path="/checkout" element={<FormCheckoutContainer />}/>
-          <Route path="*" element={<h1>errroooorrrrr</h1>} />
+          <Route path="*" element={<ErrorNoFund />} />
         </Route>
       </Routes>
       </CartContextProvider>

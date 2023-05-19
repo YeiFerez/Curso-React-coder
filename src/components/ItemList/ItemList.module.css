@@ -1,14 +1,21 @@
 .mover {
-    margin: 30px 65px 30px 65px;
+  margin: 30px 65px 30px 65px;
 }
 .Card {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
+}
 
 .loaderContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.containerCard {
+    background: linear-gradient(135deg, #5591cc, #a39393);
+}
+
+.container {
+  background: linear-gradient(135deg, #053d75, #1d1a1a);
+}

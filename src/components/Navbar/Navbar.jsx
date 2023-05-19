@@ -11,7 +11,7 @@ import { db } from "../../firebaseConfig";
 import {getDocs, collection } from "firebase/firestore"
 import { useEffect, useState } from "react";
 
-const Navbar = ( {color} )=>{
+const Navbar = (  )=>{
 
     const navigate = useNavigate();
 
@@ -35,7 +35,7 @@ const Navbar = ( {color} )=>{
         <Link to="/">
         <img className={styles.imgLogo} src={imgLogo} alt="Este es el logo de la empresa" />
         </Link>
-        <div > <h1 style={{color:{color}}}>MundoTech</h1>
+        <div > <h1 style={{color: "blue"}}>MundoTech</h1>
         <div className={styles.categories}>
           {categories.map((category) => {
             return (

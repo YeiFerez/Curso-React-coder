@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const ItemCard = ({item}) => {
   return (
-    <Card className={styles1.card} sx={{ width: 345, paddingBottom: '10px' }} >
+    <Card className={`${styles1.card} ${styles1.containerCard}`} sx={{ width: 345, paddingBottom: '10px', borderRadius: '20px' }} >
             <CardMedia
               sx={{ height: 250,paddingTop: '56.25%', objectFit: 'cover' }}
               image={item.img}
@@ -25,7 +25,7 @@ const ItemCard = ({item}) => {
                 {item.description}
               </Typography>
               <Typography variant="body2" color="primary">
-                $ :{item.price}
+                $ {item.price}
               </Typography>
             </CardContent>
             <CardActions style={{height:100}}>

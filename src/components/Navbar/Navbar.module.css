@@ -3,6 +3,7 @@
     height: 16vh;
     display: flex;
     justify-content: space-between;
+    background: linear-gradient(135deg, #5591cc, #a39393);
     background-color: rgb(176, 211, 199);
 }
 
