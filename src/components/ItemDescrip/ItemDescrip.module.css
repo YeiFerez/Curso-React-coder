@@ -1,0 +1,13 @@
+.mover {
+    margin: 30px 65px 30px 65px;
+}
+.centro {
+    display: flex;
+    justify-content: center;
+    color: darkblue;
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bold; 
+    padding-top: 20px;
+    
+  }

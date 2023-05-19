@@ -1,0 +1,20 @@
+.decoItemDetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.decoItemDetail img {
+  margin-right: 100px;
+}
+
+.decoDetail {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.decoDetail h2 {
+  margin-bottom: 30px;
+}

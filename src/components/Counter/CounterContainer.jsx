@@ -1,33 +1,24 @@
-import {useState} from "react"
+import {useEffect, useState} from "react"
 import CounterPresentation from "./CounterPresentation"
 
-const CounterContainer = () => {
-    const [ counter , setCounter ] = useState(0)
+const CounterContainer = ({ stock, onAdd, initial=1 }) => {
+    const [ counter , setCounter ] = useState(initial)
     const [user, setUser] = useState("")
 
+    useEffect(()=>{
+        setCounter(initial)
+    }, [initial])
+
     const sumar = ()=>{
-        setCounter( counter + 1 )
+        counter < stock ? setCounter( counter + 1 ) : alert("stock maximo")
+        
     }
 
     const restar = ()=>{
-        setCounter( counter - 1 )
-    }
-
-    const sumar10 = ()=>{
-        setCounter( counter + 10 )
-    }
-
-    const restar10 = ()=>{
-        setCounter( counter - 10 )
-    }
-
-    const reiniciar = ()=>{
-        setCounter(0)
-    }
-
-    const login = ()=>{
-        setUser("pepito")
-    }
+        if(counter > 1){
+            setCounter( counter - 1 )   
+        }
+    };
 
     const quitar = ()=>{
         setUser("")
@@ -38,13 +29,10 @@ const CounterContainer = () => {
     <div>
         <CounterPresentation 
         counter={counter}
-        login={login}
         sumar={sumar}
         restar={restar}
-        reiniciar={reiniciar}
-        restar10={restar10}
-        sumar10={sumar10}
         quitar={quitar}
+        onAdd={onAdd}
         user={user}
         />
     </div>
