@@ -47,4 +47,13 @@
     border: 2px solid rgb(200, 200, 200); /* agregar un cambio de borde al pasar el cursor */
     transform: scale(1.1); /* agregar una escala al pasar el cursor */
   }
+
+  .categories{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+  }
+
+ 
   

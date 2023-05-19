@@ -1,6 +1,5 @@
 export let products = [
   {
-    id: 1,
     title: "Iphone 14 pro-max",
     price: 1500,
     stock: 2,
@@ -15,7 +14,6 @@ export let products = [
     img: "https://res.cloudinary.com/dnqyxmpxg/image/upload/v1682394890/iphone-14promax_ojomsg.png",
   },
   {
-    id: 2,
     title: "Iphone 14-plus",
     price: 1300,
     stock: 5,
@@ -28,7 +26,6 @@ export let products = [
     img: "https://res.cloudinary.com/dnqyxmpxg/image/upload/v1682394887/iphone-14plus_vkbxk0.png",
   },
   {
-    id: 3,
     title: "Iphone SE 3generacion",
     price: 950,
     stock: 5,
@@ -41,7 +38,6 @@ export let products = [
     img: "https://res.cloudinary.com/dnqyxmpxg/image/upload/v1682394889/iphonese3_f5tmpw.png",
   },
   {
-    id: 4,
     title: "Galaxy Z",
     price: 1600,
     stock: 5,
@@ -54,7 +50,6 @@ export let products = [
     img: "https://res.cloudinary.com/dnqyxmpxg/image/upload/v1682394886/galaxyz_bfpn95.png",
   },
   {
-    id: 5,
     title: "Galaxy S",
     price: 1350,
     stock: 5,
@@ -69,7 +64,6 @@ Dynamic AMOLED 2X`,
     img: "https://res.cloudinary.com/dnqyxmpxg/image/upload/v1682394890/s22_vvlfhl.jpg",
   },
   {
-    id: 6,
     title: "Galaxy Note",
     price: 1150,
     stock: 5,
@@ -80,7 +74,6 @@ Dynamic AMOLED 2X`,
     img: "https://res.cloudinary.com/dnqyxmpxg/image/upload/v1682394890/note_rdcy6a.jpg",
   },
   {
-    id: 7,
     title: "Galaxy A",
     price: 750,
     stock: 5,
@@ -93,7 +86,6 @@ Dynamic AMOLED 2X`,
     img: "https://res.cloudinary.com/dnqyxmpxg/image/upload/v1682394888/galaxya_tncj2q.jpg",
   },
   {
-    id: 8,
     title: "12 T Pro",
     price: 1200,
     stock: 5,
@@ -106,7 +98,6 @@ Dynamic AMOLED 2X`,
     img: "https://res.cloudinary.com/dnqyxmpxg/image/upload/v1682394881/12t_r0stdh.png",
   },
   {
-    id: 9,
     title: "Redmi Note 11 pro",
     price: 860,
     stock: 5,
@@ -119,7 +110,6 @@ Dynamic AMOLED 2X`,
     img: "https://res.cloudinary.com/dnqyxmpxg/image/upload/v1682394889/redmi_kkrarf.png",
   },
   {
-    id: 10,
     title: "Poco F4 GT",
     price: 1050,
     stock: 5,

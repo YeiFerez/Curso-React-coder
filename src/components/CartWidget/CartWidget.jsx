@@ -1,13 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Link } from 'react-router-dom';
+import { CartContext } from '../../context/CartContext';
 
 const CartWidget = () => {
+
+  const {getTotalQuantity} = useContext(CartContext)
+  
+  let total = getTotalQuantity()
+
   return (
-    <div  >
-  <ShoppingCartIcon color="action" sx={{ fontSize: 80} }/>
-  <h3 >0</h3>
-</div>
-  )
-}
+    <Link to="/cart">
+      <div>
+        <ShoppingCartIcon color="action" sx={{ fontSize: 80 }} />
+        <h3>{total}</h3>
+      </div>
+    </Link>
+  );
+};
 
 export default CartWidget
