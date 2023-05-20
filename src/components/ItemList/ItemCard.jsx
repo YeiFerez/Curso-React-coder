@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const ItemCard = ({item}) => {
   return (
-    <Card className={`${styles1.card} ${styles1.containerCard}`} sx={{ width: 345, paddingBottom: '10px', borderRadius: '20px' }} >
+    <Card className={`${styles1.card} ${styles1.containerCard}`} sx={{ width: 345, paddingBottom: '10px', borderRadius: '20px', border: " solid black" }} >
             <CardMedia
               sx={{ height: 250,paddingTop: '56.25%', objectFit: 'cover' }}
               image={item.img}

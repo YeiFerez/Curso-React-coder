@@ -65,7 +65,7 @@ const ItemListContainer = () => {
         <ItemList items={items} />
       )}
 
-      <button onClick={addProducts}>Agregar productos a firebase</button>
+      {/* <button onClick={addProducts}>Agregar productos a firebase</button> */}
     </div>
   )
 };

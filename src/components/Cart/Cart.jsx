@@ -3,9 +3,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Cart.css";
 
-const Cart = ({ cart, clearCartWithAlert, deleteProductById, total, navigate }) => {
+const Cart = ({ cart, clearCartWithAlert, deleteProductById, total, navigate, totalItem }) => {
   return (
-    <div>
+    <div className="container">
       <div className="cart-container">
         <div className="container-items">
           {cart.map((item) => {
@@ -27,12 +27,27 @@ const Cart = ({ cart, clearCartWithAlert, deleteProductById, total, navigate }) 
             );
           })}
         </div>
+        
         <div className="cart-info">
-          <h2>Descripcion del carrito:</h2>
-          <h3>Cantidad de productos: </h3>
+
+          {cart.length > 0 ? (
+            <div><h2>Descripcion del carrito: </h2>
+            <div>
+          {cart.map((item) => {
+            return (
+              <div key={item.id} >
+                <span >
+                  - {item.title} ,    *     { item.quantity}
+                </span>
+              </div>
+            );
+          })}
+            </div>  </div>
+          ) : ( <h2>No hay productos en el carrito </h2> )}
+
+          <h3>Cantidad de productos: {totalItem} </h3>
           <h3>Precio total: {total}</h3>
-          <h3>Descuento: </h3>
-          <h3>Precio final: </h3>
+          
           {cart.length > 0 ? (
             <div className="btn-cart">
               <Button variant="contained" onClick={() => navigate("/checkout")}>
@@ -42,12 +57,12 @@ const Cart = ({ cart, clearCartWithAlert, deleteProductById, total, navigate }) 
                 Vaciar carrito
               </Button>
             </div>
+
           ) : (
             <Link to="/">
               <Button variant="contained">Agrega productos</Button>
             </Link>
           )}
-
           <h1>El total del carrito es ${total}</h1>
         </div>
       </div>

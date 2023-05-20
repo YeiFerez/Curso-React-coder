@@ -5,9 +5,10 @@ import Swal from 'sweetalert2'
 import { useNavigate } from 'react-router-dom'
 
 const CartContainer = () => {
-  const { cart, clearCart, deleteProductById, getTotalPrice } = useContext(CartContext)
+  const { cart, clearCart, deleteProductById, getTotalPrice, getTotalQuantity } = useContext(CartContext)
 
   let total = getTotalPrice()
+  let totalItem = getTotalQuantity()
   const navigate = useNavigate()
 
   const clearCartWithAlert = ()=>{
@@ -30,7 +31,7 @@ const CartContainer = () => {
 
   return (
     <div>
-        <Cart navigate={navigate} total={total} clearCartWithAlert={clearCartWithAlert} cart={cart}  deleteProductById={deleteProductById} />
+        <Cart navigate={navigate} totalItem={totalItem} total={total} clearCartWithAlert={clearCartWithAlert} cart={cart}  deleteProductById={deleteProductById} />
     </div>
   )
 }

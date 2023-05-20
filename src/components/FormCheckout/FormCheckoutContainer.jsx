@@ -65,10 +65,16 @@ export const FormCheckoutContainer = () => {
   return (
     <div>
       {orderId ? (
-        <h1>
-          Gracias por tu compra el numero comprar es {orderId} por favor
-          guardalo para cualquier cosa
-        </h1>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <div style={{ backgroundColor: '#2c3e50', padding: '20px', borderRadius: '10px', color: 'white', textAlign: 'center' }}>
+          <h2 style={{ marginBottom: '10px' }}>¡Gracias por tu compra!</h2>
+          <p style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px' }}>
+            El número de tu compra es <span style={{ color: 'orange' }}>{orderId}</span>. ¡Guárdalo para cualquier consulta o referencia futura!
+          </p>
+          <p>Si tienes alguna pregunta o necesitas asistencia adicional, no dudes en contactarnos. ¡Estamos aquí para ayudarte!</p>
+        </div>
+      </div>
+      
       ) : (
         <FormCheckout
           errors={errors}
